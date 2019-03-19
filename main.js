@@ -1,6 +1,7 @@
 exports = module.exports = function(name, base) {
   if (typeof base === "undefined") base = "";
   var PouchDB = require("pouchdb");
+  var random = require("randomstring");
   var lib = {
     sanitize: require("node-sanitize-options"),
     name: name,
@@ -120,6 +121,7 @@ exports = module.exports = function(name, base) {
             }
           });
         } else {
+          obj._id = random.generate(32);
           done(obj);
         }
       });
