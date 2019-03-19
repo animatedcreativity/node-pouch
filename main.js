@@ -1,6 +1,7 @@
 exports = module.exports = function(name, base) {
   if (typeof base === "undefined") base = "";
   var PouchDB = require("pouchdb");
+  PouchDB.plugin(require('pouchdb-find'));
   var random = require("randomstring");
   var lib = {
     sanitize: require("node-sanitize-options"),
