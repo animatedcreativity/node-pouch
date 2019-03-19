@@ -1,0 +1,25 @@
+{
+  "name": "node-pouch",
+  "version": "0.0.1",
+  "description": "Easily read/write data to multiple databases using PouchDB.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "pouchdb": "^7.0.0",
+    "node-sanitize-options": "^0.0.6"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/animatedcreativity/node-pouch"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
