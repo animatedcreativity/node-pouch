@@ -105,7 +105,7 @@ exports = module.exports = function(name, base) {
             reject(error);
           });
         }
-        if (obj._id !== "undefined") {
+        if (typeof obj._id !== "undefined") {
           lib.db(name).get(obj._id).then(function(doc) {
             obj._rev = doc._rev;
             for (var key in doc) {

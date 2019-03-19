@@ -1,6 +1,6 @@
 {
   "name": "node-pouch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily read/write data to multiple databases using PouchDB.",
   "main": "main.js",
   "scripts": {
